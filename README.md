@@ -165,14 +165,18 @@ Tools:
 
 ## ⚙️ Installation & Setup
 
-• ✅ Clone the repository  
+### ✅ Clone the repository  
 "git clone https://github.com/your-username/globalbank-multiledger.git"  
 "cd globalbank-multiledger"
 
-• ✅ Create a virtual environment (recommended)  
+---
+
+### ✅ Create a virtual environment (recommended)  
 "python -m venv venv"
 
-• ✅ Activate the virtual environment  
+---
+
+### ✅ Activate the virtual environment  
 
 Windows  
 "venv\Scripts\activate"
@@ -180,16 +184,22 @@ Windows
 Mac / Linux  
 "source venv/bin/activate"
 
-• ✅ Install dependencies  
+---
+
+### ✅ Install dependencies  
 "pip install -r requirements.txt"
 
-• ✅ Configure environment variables (if applicable)
+---
+
+### ✅ Configure environment variables (if applicable)
 
 "DATABASE_URL=bank.db"  
 "DATABRICKS_HOST=your_host"  
 "DATABRICKS_TOKEN=your_token"
 
-• ✅ Initialize the SQLite database  
+---
+
+### ✅ Initialize the SQLite database  
 "python database.py"
 
 ---
