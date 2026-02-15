@@ -51,11 +51,12 @@ Relevant for:
 
 ---
 
-## 🖥️ Application Preview
+## 🖥️ System Design
 
 
-::contentReference[oaicite:0]{index=0}
+---
 
+## 🖥️ Application Interface
 
 ---
 
@@ -166,8 +167,7 @@ Tools:
 ## ⚙️ Installation & Setup
 
 ### ✅ Clone the repository  
-"git clone https://github.com/your-username/globalbank-multiledger.git"  
-"cd globalbank-multiledger"
+"git clone https://github.com/AtharvaAthanikar2003/Global-Bank-Multiledger-Banking-System.git"  
 
 ---
 
@@ -210,7 +210,7 @@ Mac / Linux
 
 Start the application using Uvicorn:
 
-"uvicorn main:app --reload"
+"uvicorn main:app --reload" (In Backend folder, there is a main.py file. Run that file and then the given command).
 
 Backend runs at  
 "http://127.0.0.1:8000"
