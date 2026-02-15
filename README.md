@@ -1,4 +1,4 @@
-# 🌍 GlobalBank Multi-Ledger Banking System
+# 🌍 GlobalBank Multi-Ledger System
 
 🚀 Full-Stack Banking Platform | Backend Engineering + Databricks SQL Analytics
 
