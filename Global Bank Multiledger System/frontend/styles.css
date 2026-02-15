@@ -1,0 +1,303 @@
+:root {
+  --blue: #0a86e4;
+  --red: #f53939;
+  --light: #f5f7fa;
+  --white: #ffffff;
+  --border: #dcdcdc;
+  --neutral: #10ca3f;
+}
+
+* {
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Arial, sans-serif;
+}
+
+body {
+  margin: 0;
+  background: var(--light);
+  color: #333;
+}
+
+header {
+    background: linear-gradient(135deg,
+        #0080db 0%,     
+        #38b4ee 50%,     
+        #0080db 100%    
+    );
+
+    color: white;
+    padding: 7px;
+    text-align: center;
+}
+
+
+main {
+  max-width: 900px;
+  margin: 30px auto;
+  padding: 0 20px;
+}
+
+.card {
+  background: var(--white);
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+}
+
+input, select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid var(--border);
+}
+
+.actions {
+  display: flex;
+  gap: 15px;
+  margin: 20px 0;
+}
+
+.btn {
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  color: white;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  transform: translateY(-1px);
+  opacity: 0.9;
+}
+
+.btn-balance { background: var(--neutral); }
+.btn-deposit { background: var(--blue); }
+.btn-withdraw { background: var(--red); }
+
+.output {
+  margin-top: 20px;
+}
+
+/* BALANCE CARD */
+
+.balance-card {
+    margin-top: 10px;
+
+    padding: 12px 16px;          
+    border-radius: 8px;
+
+    background: #f8fbff;
+    border-left: 4px solid var(--blue);
+
+    max-width: 380px;            
+    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+}
+
+/* Balance Label */
+
+.balance-box {
+    margin-top: 10px;
+    padding: 14px 18px;
+    border-radius: 10px;
+
+    color: white;
+    max-width: 420px;
+
+    position: relative;
+    overflow: hidden;
+
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+}
+
+.balance-box::before {
+    content: "";
+
+    position: absolute;
+    inset: 0;
+
+    background: rgba(0, 0, 0, 0.18);   
+    z-index: 1;
+}
+.balance-box > * {
+    position: relative;
+    z-index: 2;
+}
+
+/* Currency Themes */
+
+/* 🇮🇳 INR – India (Saffron / White / Green / Blue) */
+.balance-INR {
+    background: linear-gradient(135deg,   
+        #f3881c 0%,    
+        #fbfbfb 35%,    
+        #1f1fdb 50%,    
+        #fbfbfb 65%,   
+        #22be13 100% 
+    );
+}
+/* 🇺🇸 USD – USA (Red / White / Blue) */
+.balance-USD {
+    background: linear-gradient(135deg,
+        #d51f34 0%,
+        #FFFFFF 50%,
+        #2035c1 100%);
+}
+
+/* 🇨🇦 CAD – Canada (Red / White / Red) */
+.balance-CAD {
+    background: linear-gradient(135deg,
+        #D52B1E 0%,
+        #FFFFFF 50%,
+        #D52B1E 100%);
+}
+
+/* 🇬🇧 GBP – UK (Blue / Red / White) */
+.balance-GBP {
+    background: linear-gradient(135deg,
+        #012169 0%,
+        #FFFFFF 50%,
+        #C8102E 100%);
+}
+
+/* 🇪🇺 EUR – EU (Deep Blue / Gold) */
+.balance-EUR {
+    background: linear-gradient(135deg,
+        #003399 0%,
+        #FFCC00 50%,
+        #003399 100%);
+}
+
+/* 🇩🇰 DKK – Denmark (Red / White) */
+.balance-DKK {
+    background: linear-gradient(135deg,
+        #C60C30 0%,
+        #FFFFFF 50%,
+        #C60C30 100%);
+}
+
+/* 🇨🇭 CHF – Switzerland (Red / White) */
+.balance-CHF {
+    background: linear-gradient(135deg,
+        #D52B1E 0%,
+        #FFFFFF 45%,
+        #D52B1E 100%);
+}
+
+/* 🇦🇺 AUD – Australia (Blue / Red / White) */
+.balance-AUD {
+    background: linear-gradient(135deg,
+        #012169 0%,
+        #FFFFFF 50%,
+        #C8102E 100%);
+}
+
+/* 🇳🇿 NZD – New Zealand (Blue / Red / White) */
+.balance-NZD {
+    background: linear-gradient(135deg,
+        #00247D 0%,
+        #FFFFFF 50%,
+        #CC142B 100%);
+}
+
+/* 🇷🇺 RUB – Russia (White / Blue / Red) */
+.balance-RUB {
+    background: linear-gradient(135deg,
+        #FFFFFF 0%,
+        #0039A6 50%,
+        #D52B1E 100%);
+}
+
+/* 🇦🇪 AED – UAE (Red / Green / White / Black) */
+.balance-AED {
+    background: linear-gradient(135deg,
+        #FF0000 0%,
+        #00732F 40%,
+        #FFFFFF 60%,
+        #000000 100%);
+}
+
+/* 🇰🇼 KWD – Kuwait (Green / White / Red / Black) */
+.balance-KWD {
+    background: linear-gradient(135deg,
+        #007A3D 0%,
+        #FFFFFF 45%,
+        #CE1126 65%,
+        #000000 100%);
+}
+
+/* Balance Label */
+#balanceCurrency {
+    font-size: 14px;
+    opacity: 0.9;
+    margin: 0;
+}
+
+/* Balance Amount */
+#balanceAmount {
+    font-size: 26px;
+    font-weight: 600;
+    margin: 6px 0 0;
+}
+
+/* Transactions */
+
+.transactions {
+  margin-top: 25px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+}
+
+th {
+  background: var(--blue);
+  color: white;
+  padding: 10px;
+  font-weight: 500;
+}
+
+td {
+  padding: 10px;
+  border-bottom: 1px solid var(--border);
+}
+
+th, td {
+    text-align: center;
+}
+
+tr:hover {
+  background: #f5f9ff;
+}
+
+/* Toast */
+
+#toast {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  background: var(--blue);
+  color: white;
+  padding: 14px 18px;
+  border-radius: 6px;
+  opacity: 0;
+  transition: 0.3s;
+}
+
+#toast.show {
+  opacity: 1;
+}
+
+footer {
+  text-align: center;
+  margin: 30px 0;
+}
