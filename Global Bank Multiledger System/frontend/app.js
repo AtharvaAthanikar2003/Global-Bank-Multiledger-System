@@ -33,19 +33,28 @@ function getValidatedInputs(requireAmount = false) {
 
 function formatCurrency(currency, amount) {
     const symbols = {
-        USD: "$",
         INR: "₹",
-        EUR: "€",
-        GBP: "£",
+        USD: "$",
         CAD: "C$",
+        GBP: "£",
+        EUR: "€",
+        DKK: "kr ",
+        CHF: "CHF ",
         AUD: "A$",
         NZD: "NZ$",
-        CHF: "CHF ",
-        DKK: "kr ",
+        SGD: "S$",
         RUB: "₽",
+        JPY: "¥",
+        CNY: "¥",
         AED: "د.إ ",
-        KWD: "د.ك "
+        KWD: "د.ك ",
+        BHD: "ب.د ",
+        JOD: "د.ا ",
+        OMR: "ر.ع ",
+        BRL: "R$",
+        ZAR: "R "
     };
+
     const symbol = symbols[currency] || (currency + " ");
     return symbol + Number(amount).toFixed(2);
 }

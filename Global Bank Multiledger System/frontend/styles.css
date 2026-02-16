@@ -19,17 +19,15 @@ body {
 }
 
 header {
-    background: linear-gradient(135deg,
-        #0080db 0%,     
-        #38b4ee 50%,     
-        #0080db 100%    
-    );
-
-    color: white;
-    padding: 7px;
-    text-align: center;
+  background: linear-gradient(135deg,
+      #0080db 0%,     
+      #38b4ee 50%,     
+      #0080db 100%    
+  );
+  color: white;
+  padding: 7px;
+  text-align: center;
 }
-
 
 main {
   max-width: 900px;
@@ -89,166 +87,157 @@ input, select {
 /* BALANCE CARD */
 
 .balance-card {
-    margin-top: 10px;
-
-    padding: 12px 16px;          
-    border-radius: 8px;
-
-    background: #f8fbff;
-    border-left: 4px solid var(--blue);
-
-    max-width: 380px;            
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
+  margin-top: 10px;
+  padding: 12px 16px;          
+  border-radius: 8px;
+  background: #056aed;
+  border-left: 4px solid var(--blue);
+  max-width: 380px;            
+  box-shadow: 0 2px 6px rgba(0,0,0,0.05);
 }
 
 /* Balance Label */
 
 .balance-box {
-    margin-top: 10px;
-    padding: 14px 18px;
-    border-radius: 10px;
-
-    color: white;
-    max-width: 420px;
-
-    position: relative;
-    overflow: hidden;
-
-    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+  margin-top: 10px;
+  padding: 14px 18px;
+  border-radius: 10px;
+  color: white;
+  max-width: 420px;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0,0,0,0.15);
 }
 
 .balance-box::before {
-    content: "";
-
-    position: absolute;
-    inset: 0;
-
-    background: rgba(0, 0, 0, 0.18);   
-    z-index: 1;
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.18);   
+  z-index: 1;
 }
 .balance-box > * {
-    position: relative;
-    z-index: 2;
+  position: relative;
+  z-index: 2;
 }
 
 /* Currency Themes */
 
-/* 🇮🇳 INR – India (Saffron / White / Green / Blue) */
+/* 🇮🇳 INR – India */
 .balance-INR {
-    background: linear-gradient(135deg,   
-        #f3881c 0%,    
-        #fbfbfb 35%,    
-        #1f1fdb 50%,    
-        #fbfbfb 65%,   
-        #22be13 100% 
-    );
+  background: linear-gradient(135deg, #f3881c 0%, #fbfbfb 35%, #1f1fdb 50%, #fbfbfb 65%, #22be13 100%);
 }
-/* 🇺🇸 USD – USA (Red / White / Blue) */
+
+/* 🇺🇸 USD – USA */
 .balance-USD {
-    background: linear-gradient(135deg,
-        #d51f34 0%,
-        #FFFFFF 50%,
-        #2035c1 100%);
+  background: linear-gradient(135deg, #d51f34 0%, #FFFFFF 50%, #2035c1 100%);
 }
 
-/* 🇨🇦 CAD – Canada (Red / White / Red) */
+/* 🇨🇦 CAD – Canada */
 .balance-CAD {
-    background: linear-gradient(135deg,
-        #D52B1E 0%,
-        #FFFFFF 50%,
-        #D52B1E 100%);
+  background: linear-gradient(135deg, #D52B1E 0%, #FFFFFF 50%, #D52B1E 100%);
 }
 
-/* 🇬🇧 GBP – UK (Blue / Red / White) */
+/* 🇬🇧 GBP – UK */
 .balance-GBP {
-    background: linear-gradient(135deg,
-        #012169 0%,
-        #FFFFFF 50%,
-        #C8102E 100%);
+  background: linear-gradient(135deg, #012169 0%, #FFFFFF 50%, #C8102E 100%);
 }
 
-/* 🇪🇺 EUR – EU (Deep Blue / Gold) */
+/* 🇪🇺 EUR – EU */
 .balance-EUR {
-    background: linear-gradient(135deg,
-        #003399 0%,
-        #FFCC00 50%,
-        #003399 100%);
+  background: linear-gradient(135deg, #003399 0%, #FFCC00 50%, #003399 100%);
 }
 
-/* 🇩🇰 DKK – Denmark (Red / White) */
+/* 🇩🇰 DKK – Denmark */
 .balance-DKK {
-    background: linear-gradient(135deg,
-        #C60C30 0%,
-        #FFFFFF 50%,
-        #C60C30 100%);
+  background: linear-gradient(135deg, #C60C30 0%, #FFFFFF 50%, #C60C30 100%);
 }
 
-/* 🇨🇭 CHF – Switzerland (Red / White) */
+/* 🇨🇭 CHF – Switzerland */
 .balance-CHF {
-    background: linear-gradient(135deg,
-        #D52B1E 0%,
-        #FFFFFF 45%,
-        #D52B1E 100%);
+  background: linear-gradient(135deg, #D52B1E 0%, #FFFFFF 45%, #D52B1E 100%);
 }
 
-/* 🇦🇺 AUD – Australia (Blue / Red / White) */
+/* 🇦🇺 AUD – Australia */
 .balance-AUD {
-    background: linear-gradient(135deg,
-        #012169 0%,
-        #FFFFFF 50%,
-        #C8102E 100%);
+  background: linear-gradient(135deg, #012169 0%, #FFFFFF 50%, #C8102E 100%);
 }
 
-/* 🇳🇿 NZD – New Zealand (Blue / Red / White) */
+/* 🇳🇿 NZD – New Zealand */
 .balance-NZD {
-    background: linear-gradient(135deg,
-        #00247D 0%,
-        #FFFFFF 50%,
-        #CC142B 100%);
+  background: linear-gradient(135deg, #00247D 0%, #FFFFFF 50%, #CC142B 100%);
 }
 
-/* 🇷🇺 RUB – Russia (White / Blue / Red) */
+/* 🇷🇺 RUB – Russia */
 .balance-RUB {
-    background: linear-gradient(135deg,
-        #FFFFFF 0%,
-        #0039A6 50%,
-        #D52B1E 100%);
+  background: linear-gradient(135deg, #FFFFFF 0%, #0039A6 50%, #D52B1E 100%);
 }
 
-/* 🇦🇪 AED – UAE (Red / Green / White / Black) */
+/* 🇦🇪 AED – UAE */
 .balance-AED {
-    background: linear-gradient(135deg,
-        #FF0000 0%,
-        #00732F 40%,
-        #FFFFFF 60%,
-        #000000 100%);
+  background: linear-gradient(135deg, #FF0000 0%, #00732F 40%, #FFFFFF 60%, #000000 100%);
 }
 
-/* 🇰🇼 KWD – Kuwait (Green / White / Red / Black) */
+/* 🇰🇼 KWD – Kuwait */
 .balance-KWD {
-    background: linear-gradient(135deg,
-        #007A3D 0%,
-        #FFFFFF 45%,
-        #CE1126 65%,
-        #000000 100%);
+  background: linear-gradient(135deg, #007A3D 0%, #FFFFFF 45%, #CE1126 65%, #000000 100%);
+}
+
+/* 🇸🇬 SGD – Singapore */
+.balance-SGD {
+  background: linear-gradient(135deg, #EF3340 0%, #FFFFFF 50%, #ED2939 100%);
+}
+
+/* 🇯🇵 JPY – Japan */
+.balance-JPY {
+  background: linear-gradient(135deg, #bc0000 0%, #FFFFFF 50%, #bc0000 100%);
+}
+
+/* 🇨🇳 CNY – China */
+.balance-CNY {
+  background: linear-gradient(135deg, #DE2910 0%, #FFDE00 50%, #DE2910 100%);
+}
+
+/* BHD – Bahrain */
+.balance-BHD {
+  background: linear-gradient(135deg, #D71A28 0%, #FFFFFF 50%, #D71A28 100%);
+}
+
+/* JOD – Jordan */
+.balance-JOD {
+  background: linear-gradient(135deg, #000000 0%, #FFFFFF 40%, #007A3D 70%, #CE1126 100%);
+}
+
+/* OMR – Oman */
+.balance-OMR {
+  background: linear-gradient(135deg, #FFFFFF 0%, #CE1126 50%, #007A3D 100%);
+}
+
+/* BRL – Brazil */
+.balance-BRL {
+  background: linear-gradient(135deg, #009739 0%, #FFCC29 50%, #002776 100%);
+}
+
+/* ZAR – South Africa */
+.balance-ZAR {
+  background: linear-gradient(135deg, #000000 0%, #007847 20%, #FFB612 40%, #DE3831 60%, #00247D 80%, #FFFFFF 100%);
 }
 
 /* Balance Label */
 #balanceCurrency {
-    font-size: 14px;
-    opacity: 0.9;
-    margin: 0;
+  font-size: 14px;
+  opacity: 0.9;
+  margin: 0;
 }
 
 /* Balance Amount */
 #balanceAmount {
-    font-size: 26px;
-    font-weight: 600;
-    margin: 6px 0 0;
+  font-size: 26px;
+  font-weight: 600;
+  margin: 6px 0 0;
 }
 
-/* Transactions */
-
+/* Transactions Table */
 .transactions {
   margin-top: 25px;
 }
@@ -272,7 +261,7 @@ td {
 }
 
 th, td {
-    text-align: center;
+  text-align: center;
 }
 
 tr:hover {
@@ -280,7 +269,6 @@ tr:hover {
 }
 
 /* Toast */
-
 #toast {
   position: fixed;
   bottom: 30px;

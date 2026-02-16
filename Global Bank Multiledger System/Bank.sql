@@ -119,18 +119,26 @@ USING DELTA;
 -- ============================================================
 
 INSERT INTO users VALUES
-(1,  'Rahul',    'INR', current_timestamp()),
-(2,  'John',     'USD', current_timestamp()),
-(3,  'Lucas',    'CAD', current_timestamp()),
-(4,  'Emma',     'GBP', current_timestamp()),
-(5,  'Marie',    'EUR', current_timestamp()),
-(6,  'Sofia',    'DKK', current_timestamp()),
-(7,  'Chloe',    'CHF', current_timestamp()),
-(8,  'Ava',      'AUD', current_timestamp()),
-(9,  'Isabella', 'NZD', current_timestamp()),
-(10, 'Ivan',     'RUB', current_timestamp()),
-(11, 'Ahmed',    'AED', current_timestamp()),
-(12, 'Fahad',    'KWD', current_timestamp());
+(1,  'Rahul',    'INR', current_timestamp()),   -- Indian Rupee
+(2,  'John',     'USD', current_timestamp()),   -- US Dollar
+(3,  'Lucas',    'CAD', current_timestamp()),   -- Canadian Dollar
+(4,  'Emma',     'GBP', current_timestamp()),   -- British Pound Sterling
+(5,  'Marie',    'EUR', current_timestamp()),   -- Euro
+(6,  'Sofia',    'DKK', current_timestamp()),   -- Danish Krone
+(7,  'Chloe',    'CHF', current_timestamp()),   -- Swiss Franc
+(8,  'Ava',      'AUD', current_timestamp()),   -- Australian Dollar
+(9,  'Isabella', 'NZD', current_timestamp()),   -- New Zealand Dollar
+(10, 'Wei',      'SGD', current_timestamp()),   -- Singapore Dollar
+(11, 'Ivan',     'RUB', current_timestamp()),   -- Russian Ruble
+(12, 'Hana',     'JPY', current_timestamp()),   -- Japanese Yen
+(13, 'Mei',      'CNY', current_timestamp()),   -- Chinese Yuan
+(14, 'Alisha',   'AED', current_timestamp()),   -- UAE Dirham
+(15, 'Sara',     'KWD', current_timestamp()),   -- Kuwaiti Dinar
+(16, 'Amelia',   'BHD', current_timestamp()),   -- Bahraini Dinar
+(17, 'Omar',     'JOD', current_timestamp()),   -- Jordanian Dinar
+(18, 'Salman',   'OMR', current_timestamp()),   -- Omani Rial
+(19, 'Carlos',   'BRL', current_timestamp()),   -- Brazilian Real
+(20, 'Anna',     'ZAR', current_timestamp());   -- South African Rand
 
 
 -- COMMAND ----------
@@ -149,36 +157,61 @@ INSERT INTO wallets VALUES
 (107, 7,  'CHF', 0,  current_timestamp()),
 (108, 8,  'AUD', 0,  current_timestamp()),
 (109, 9,  'NZD', 0,  current_timestamp()),
-(110, 10, 'RUB', 0,  current_timestamp()),
-(111, 11, 'AED', 0,  current_timestamp()),
-(112, 12, 'KWD', 0,  current_timestamp());
+(110, 10, 'SGD', 0,  current_timestamp()),
+(111, 11, 'RUB', 0,  current_timestamp()),
+(112, 12, 'JPY', 0,  current_timestamp()),
+(113, 13, 'CNY', 0,  current_timestamp()),
+(114, 14, 'AED', 0,  current_timestamp()),
+(115, 15, 'KWD', 0,  current_timestamp()),
+(116, 16, 'BHD', 0,  current_timestamp()),
+(117, 17, 'JOD', 0,  current_timestamp()),
+(118, 18, 'OMR', 0,  current_timestamp()),
+(119, 19, 'BRL', 0,  current_timestamp()),
+(120, 20, 'ZAR', 0,  current_timestamp());
 
 -- COMMAND ----------
 
 INSERT INTO transactions
-SELECT uuid(), NULL, 1,  'INR', 'INR', 0, 5000, 1, current_timestamp()
+SELECT uuid(), NULL, 1,  'INR', 'INR', 0, 50000, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 2,  'USD', 'USD', 0, 3200, 1, current_timestamp()
+SELECT uuid(), NULL, 2,  'USD', 'USD', 0, 42800, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 3,  'CAD', 'CAD', 0, 6400, 1, current_timestamp()
+SELECT uuid(), NULL, 3,  'CAD', 'CAD', 0, 31200, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 4,  'GBP', 'GBP', 0, 2800, 1, current_timestamp()
+SELECT uuid(), NULL, 4,  'GBP', 'GBP', 0, 29100, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 5,  'EUR', 'EUR', 0, 7600, 1, current_timestamp()
+SELECT uuid(), NULL, 5,  'EUR', 'EUR', 0, 37400, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 6,  'DKK', 'DKK', 0, 4300, 1, current_timestamp()
+SELECT uuid(), NULL, 6,  'DKK', 'DKK', 0, 19800, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 7,  'CHF', 'CHF', 0, 8900, 1, current_timestamp()
+SELECT uuid(), NULL, 7,  'CHF', 'CHF', 0, 45500, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 8,  'AUD', 'AUD', 0, 5100, 1, current_timestamp()
+SELECT uuid(), NULL, 8,  'AUD', 'AUD', 0, 28700, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 9,  'NZD', 'NZD', 0, 3700, 1, current_timestamp()
+SELECT uuid(), NULL, 9,  'NZD', 'NZD', 0, 33100, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 10, 'RUB', 'RUB', 0, 9200, 1, current_timestamp()
+SELECT uuid(), NULL, 10, 'SGD', 'SGD', 0, 25900, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 11, 'AED', 'AED', 0, 6100, 1, current_timestamp()
+SELECT uuid(), NULL, 11, 'RUB', 'RUB', 0, 36400, 1, current_timestamp()
 UNION ALL
-SELECT uuid(), NULL, 12, 'KWD', 'KWD', 0, 7400, 1, current_timestamp();
+SELECT uuid(), NULL, 12, 'JPY', 'JPY', 0, 29500, 1, current_timestamp()
+UNION ALL
+SELECT uuid(), NULL, 13, 'CNY', 'CNY', 0, 27100, 1, current_timestamp()
+UNION ALL
+SELECT uuid(), NULL, 14, 'AED', 'AED', 0, 30600, 1, current_timestamp()
+UNION ALL
+SELECT uuid(), NULL, 15, 'KWD', 'KWD', 0, 28400, 1, current_timestamp()
+UNION ALL
+SELECT uuid(), NULL, 16, 'BHD', 'BHD', 0, 34900, 1, current_timestamp()
+UNION ALL
+SELECT uuid(), NULL, 17, 'JOD', 'JOD', 0, 22300, 1, current_timestamp()
+UNION ALL
+SELECT uuid(), NULL, 18, 'OMR', 'OMR', 0, 31100, 1, current_timestamp()
+UNION ALL
+SELECT uuid(), NULL, 19, 'BRL', 'BRL', 0, 29800, 1, current_timestamp()
+UNION ALL
+SELECT uuid(), NULL, 20, 'ZAR', 'ZAR', 0, 26500, 1, current_timestamp();
+
 
 -- COMMAND ----------
 
@@ -189,22 +222,22 @@ SELECT uuid(), NULL, 12, 'KWD', 'KWD', 0, 7400, 1, current_timestamp();
 INSERT INTO fx_rates VALUES
 ('USD','USD',1.00,current_timestamp()),
 
-('USD','INR',91.70,current_timestamp()),
+('USD','INR',90.66,current_timestamp()),
 ('INR','USD',0.01,current_timestamp()),
 
-('USD','GBP',0.76,current_timestamp()),
-('GBP','USD',1.32,current_timestamp()),
+('USD','GBP',0.73,current_timestamp()),
+('GBP','USD',1.37,current_timestamp()),
 
 ('USD','EUR',0.92,current_timestamp()),
 ('EUR','USD',1.09,current_timestamp()),
 
-('USD','CAD',1.34,current_timestamp()),
-('CAD','USD',0.75,current_timestamp()),
+('USD','CAD',1.36,current_timestamp()),
+('CAD','USD',0.74,current_timestamp()),
 
-('USD','AUD',1.62,current_timestamp()),
-('AUD','USD',0.62,current_timestamp()),
+('USD','AUD',1.55,current_timestamp()),
+('AUD','USD',0.65,current_timestamp()),
 
-('USD','NZD',1.55,current_timestamp()),
+('USD','NZD',1.53,current_timestamp()),
 ('NZD','USD',0.65,current_timestamp()),
 
 ('USD','DKK',6.98,current_timestamp()),
@@ -220,7 +253,22 @@ INSERT INTO fx_rates VALUES
 ('KWD','USD',3.23,current_timestamp()),
 
 ('USD','CHF',0.89,current_timestamp()),
-('CHF','USD',1.12,current_timestamp());
+('CHF','USD',1.12,current_timestamp()),
+
+('USD','JPY',153.39,current_timestamp()),
+('JPY','USD',0.01,current_timestamp()),
+
+('USD','SGD',1.35,current_timestamp()),
+('SGD','USD',0.74,current_timestamp()),
+
+('USD','CNY',7.20,current_timestamp()),
+('CNY','USD',0.14,current_timestamp()),
+
+('USD','BRL',5.20,current_timestamp()),
+('BRL','USD',0.19,current_timestamp()),
+
+('USD','ZAR',18.00,current_timestamp()),
+('ZAR','USD',0.06,current_timestamp());
 
 -- COMMAND ----------
 
